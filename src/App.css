@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2? famille= Hanken+Grotesk:wght@500;700;800 & display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section{
+    display: flex;
+    flex-direction: row;
+    margin: 10%;
+    margin-left: 20%;
+    box-shadow:0 0 2em hsla(241, 100%, 89%);
+    border-radius: 1rem;
+    width: 700px;
+    height: 450px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+    padding: 5%;
+    background: linear-gradient(-360deg,hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+    border-radius: 1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rond{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-360deg,hsla(241, 72%, 46%, 0),hsla(256, 72%, 46%, 1));
+    border-radius: 10rem;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    
 }
-
-.App-link {
-  color: #61dafb;
+#title{
+    color: #C6BCFB;
+    font-size: 20px;
+    margin-bottom: 17px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#title_rond{
+    color: #C3B8E7;
+    font-size: 5rem;
+}
+#other_rond{
+    color: #8576FF;
+    font-size: 15px;
+}
+#great{
+    color: #FCFCFF;
+    font-size: 25px;
+}
+#left_foot{
+    color: #5E57EE;
+    font-size: 15px;
+    text-align: center;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 15px;
+    padding: 7.5%;
+}
+#summary{
+    align-self: center;
+    text-align: left;
+    font-size: 30px;
+    width: 100%;
+}
+.norm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    padding: 5%;
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.norm_3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12.5px;
+}
+#reaction{ 
+    background: hsla(0, 100%, 67%,.1);
+}
+#span_reaction{
+    color: hsl(0, 100%, 67%);
+}
+#memory{
+    background-color: hsla(39, 100%, 56%,.1);;
+}
+#span_memory{
+    color: hsl(39, 100%, 56%);
+}
+#verbal{
+    background-color: hsla(166, 100%, 37%,.1);
+}
+#span_verbal{
+    color: hsl(166, 100%, 37%);
+}
+#visual{
+    background-color: hsla(234, 85%, 45%,.1);
+}
+#span_visual{
+    color: hsl(234, 85%, 45%);
+}
+button{
+    background-color: hsl(224, 30%, 27%);
+    cursor: pointer;
+    color: #DFD7FF;
+    font-size: 15px;
+    margin-top: 1rem;
+    padding: 5%;
+    width: 100%;
+    border: 0.5px solid;
+    border-radius: 2rem;
+}
+button:hover{
+    background-color: hsl(234, 85%, 45%);
+}
+@media screen and (max-width :900px) {
+    .section{
+        margin-left: 10%;
+        width: 75%;
+        height: 75%;
+    }
+}
+@media screen and (max-width :690px) {
+    .section{
+        margin-left: 8%;
+        width: 550px;
+        height: 375px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .section{
+        flex-direction: column;
+        justify-content:safe;
+        width: 50%;
+        height: 100%;
+        margin-left: 25%;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        align-self: center;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .section{
+        margin-left: 15%;
+        width: 250px;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
+@media screen and (max-width:325px) {
+    .section{
+        margin: 5%;
+    }
+}
+@media screen and (max-width:290px) {
+    .section{
+        margin: 0.1%;
+    }
 }
